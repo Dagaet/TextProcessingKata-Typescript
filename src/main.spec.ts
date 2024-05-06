@@ -1,10 +1,13 @@
 import { describe, it, expect } from "vitest"
-import { myFunction } from "./main.js"
+import { textProcessing } from "./main.js"
 
-describe("Default test", () => {
-  it("should work", () => {
-    const result = myFunction()
+describe("textProcessing", () => {
+  // Debería contar los caracteres que hay en el texto
+  //
 
-    expect(result).toBe(true)
+  it("should count the number of words in the given text", () => {
+    const result = textProcessing()
+
+    expect(result).toBe("The text has in total 21 words")
   })
 })
